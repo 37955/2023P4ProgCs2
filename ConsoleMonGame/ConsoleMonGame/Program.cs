@@ -4,14 +4,21 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            ConsoleMon console = new ConsoleMon();
+            Skill skill = new Skill();
+            TestConsoleMonFunctions();
         }
-    }
+        static void TestConsoleMonFunctions()
+        {
+            Console.WriteLine("TestConsoleMonFunctions");
+            ConsoleMon mon = new ConsoleMon();
+            mon.TakeDamage(100);
+            mon.DepleteEnergy(20);
 
-    internal class ConsoleMon
-    {
-        internal int health;
-        internal int energy;
-        internal string name;
+            Console.WriteLine(mon.health == -100);
+
+            Console.WriteLine(mon.energy == -20);
+        }
+
     }
 }
