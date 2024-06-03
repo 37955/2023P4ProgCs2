@@ -15,7 +15,7 @@ namespace ConsoleMonGame
         private List<Skill> skills;
 
         internal void TakeDamage(int damage)
-        {
+        {   
             health -= damage;
         }
 
