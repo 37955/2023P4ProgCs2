@@ -12,6 +12,7 @@ namespace ConsoleMonGame
         internal int health;
         internal int energy;
         internal string name;
+        private List<Skill> skills;
 
         internal void TakeDamage(int damage)
         {
@@ -22,5 +23,12 @@ namespace ConsoleMonGame
         {
             this.energy -= energy;
         }
+
+        internal ConsoleMon()
+        {
+            skills = new List<Skill>();
+        }
+
+
     }
 }

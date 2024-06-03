@@ -11,5 +11,10 @@ namespace ConsoleMonGame
         int damage;
         int energyCost;
         string name;
+
+        internal void UseOn(int useon)
+        {
+
+        }
     }
 }
