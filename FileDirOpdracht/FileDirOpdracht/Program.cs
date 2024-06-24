@@ -21,7 +21,7 @@ namespace DirectoryInfoExample
             
             DirectoryInfo[] directories = dir.GetDirectories();
             
-            Console.WriteLine("\nDirectories:");
+            Console.WriteLine("\nDirectories:");    
             foreach (DirectoryInfo directory in directories)
             {
                 Console.WriteLine(directory.Name);
